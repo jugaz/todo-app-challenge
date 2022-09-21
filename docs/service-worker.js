@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/todo-app-challenge/precache-manifest.4c0346eaf3c3cee54182fa272657d6f8.js"
+  "/todo-app-challenge/precache-manifest.784f69cbd113b4f8de6c063433acf698.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vuetify-todo-pwa"});

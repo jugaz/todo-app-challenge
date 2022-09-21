@@ -28,8 +28,9 @@ const mutations = {
     state.todos.splice(state.todos.indexOf(todo), 1)
   },
   editTodo (state, todo) {
-    const idx =  state.todos.map( e => e.id ).indexOf( todo.id )
-    state.todos[idx] = todos
+ 
+    const idx = state.todos.map( e => e.id ).indexOf( todo.id )
+    state.todos[idx] = todo
   }
 }
 

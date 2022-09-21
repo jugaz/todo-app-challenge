@@ -1,4 +1,4 @@
-<template>
+<template  lang="html">
   <v-layout row wrap>
     <v-flex text-xs-center>
       <!-- header -->
@@ -40,7 +40,7 @@
         <v-progress-linear class="my-0" v-model="progressPercentage"/>
         <v-card-actions class="px-3" v-show="todos.length">
           <span class="primary--text">
-            {{ remaining }} {{ remaining | pluralize('item') }} left
+            <!-- {{ remaining }} {{ remaining | pluralize('item') }} left -->
           </span>
           <v-spacer></v-spacer>
           <v-btn-toggle
@@ -194,7 +194,15 @@ export default {
       return filters[this.visibility](this.todos)
     },
     remaining () {
-      return this.todos.filter(todo => !todo.done).length
+      
+      console.log({
+        "A":this.todos
+      })
+      
+      
+        // return this.todos.length != 0 ? this.todos.filter(todo => !todo.done).length : ''
+      
+      
     },
     progressPercentage () {
       var len = this.todos.length
